@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ResilientSA: Talk to us</title>
+<meta name="description" content="ResilientSA: an Ubuntu-rooted mutual-aid platform and training programme for South African communities. Still being built, in the open.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="assets/img/favicon-64.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&family=Inter:wght@400;500;600&family=Bungee&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<nav class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-row">
+    <a href="index.html" class="nav-logo">ResilientSA</a>
+    <div class="nav-links">
+      <a href="platform.html">The platform</a>
+      <a href="train.html">Train with us</a>
+      <a href="communities.html">For communities</a>
+      <a href="grounders.html">For Grounders</a>
+      <a href="funders.html">For funders</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="nav-cta">Talk to us</a>
+    </div>
+    <label for="nav-check" class="nav-toggle-label nav-toggle-open">
+      <span class="nav-toggle" aria-label="Open menu"></span>
+    </label>
+  </div>
+  <div class="nav-mobile">
+      <a href="platform.html">The platform</a>
+      <a href="train.html">Train with us</a>
+      <a href="communities.html">For communities</a>
+      <a href="grounders.html">For Grounders</a>
+      <a href="funders.html">For funders</a>
+      <a href="about.html">About</a>
+    <a href="contact.html" class="cta">Talk to us</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner" style="flex-direction:column;align-items:flex-start;">
+    <div style="width:100%;">
+      <h1 style="font-size:44px;">Talk to us.</h1>
+      <p class="lede">One form. Tell us who you are and we'll get it to the right person.</p>
+      <p style="font:400 14px/1.6 var(--font-body);color:var(--bark-400);margin-bottom:var(--space-6);">We reply to real messages from real people. It might take us a few days. We'll say so if it does.</p>
+    </div>
+    <form class="form-card" style="width:100%;" action="mailto:hello@resilientsa.org.za" method="post" enctype="text/plain">
+      <div>
+        <div style="font:600 14px var(--font-body);margin-bottom:10px;">Who are you?</div>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="who" value="community" checked>I'm from a community</label>
+          <label class="chip"><input type="radio" name="who" value="train">I want to train</label>
+          <label class="chip"><input type="radio" name="who" value="grounder">I'm a Grounder</label>
+          <label class="chip"><input type="radio" name="who" value="funder">I'm a funder</label>
+          <label class="chip"><input type="radio" name="who" value="other">Something else</label>
+        </div>
+      </div>
+      <label class="field">Your name<input type="text" name="name" placeholder="Name" required></label>
+      <label class="field">How can we reach you?<input type="text" name="contact" placeholder="Email or phone number" required></label>
+      <label class="field">What's on your mind?<textarea name="message" placeholder="Tell us in your own words" required></textarea></label>
+      <p class="form-note">We'll use your details only to reply to you. Read our <a href="privacy.html">privacy notice</a>.</p>
+      <div><button type="submit" class="btn btn-primary">Send</button></div>
+    </form>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="footer-inner">
+    <div class="footer-brand">ResilientSA</div>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy notice</a>
+      <span>Gifts of community, roots of resilience. &middot; An NPC in formation, South Africa.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
