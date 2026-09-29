@@ -58,7 +58,8 @@ p { margin: 0; }
   max-width: var(--max); margin: 0 auto; padding: 0 var(--space-5);
   height: 72px; display: flex; align-items: center; justify-content: space-between;
 }
-.nav-logo { font: 700 20px var(--font-display); color: var(--bark-900); text-decoration: none; }
+.nav-logo { font: 700 20px var(--font-display); color: var(--bark-900); text-decoration: none; display: flex; align-items: center; gap: 9px; }
+.nav-logo img { width: 30px; height: 30px; display: block; }
 .nav-links { display: none; align-items: center; gap: var(--space-6); }
 .nav-links a { font: 500 15px var(--font-body); text-decoration: none; color: var(--bark-900); }
 .nav-links a.active { color: var(--aloe); font-weight: 600; border-bottom: 2px solid var(--aloe); padding-bottom: 2px; }
