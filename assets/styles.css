@@ -167,7 +167,7 @@ section.block.dark .split .col-body p { color: var(--bark-200); }
   display: inline-flex; align-items: center; gap: 8px; padding: 7px 13px;
   border-radius: var(--radius-pill); font: 500 14px var(--font-body); color: var(--bark-900);
 }
-.pillar .dot { width: 9px; height: 9px; border-radius: 50%; }
+.pillar-icon { width: 15px; height: 15px; flex-shrink: 0; }
 
 .paths { display: flex; flex-direction: column; gap: var(--space-4); margin-top: var(--space-6); }
 .path-card {
