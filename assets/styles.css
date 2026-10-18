@@ -158,9 +158,31 @@ section.block.dark .split .col-body p { color: var(--bark-200); }
 .card.bg-ink { background: var(--bark-900); }
 .card.bg-ink .card-title, .card.bg-ink p { color: var(--canvas); }
 .card.bg-clay { background: var(--clay); }
+.card.pending { border: 1.5px dashed rgba(44,42,41,0.28); background: transparent; }
+.card.pending .card-title { color: var(--bark-600); }
+.card.pending p { color: var(--bark-400); }
 .card-title { font: 700 18px var(--font-display); color: var(--bark-900); }
 .card p { font: 400 15px/1.6 var(--font-body); color: var(--bark-600); }
+.card-badge {
+  display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: var(--radius-pill);
+  font: 600 11px var(--font-body); letter-spacing: 0.02em; text-transform: uppercase; align-self: flex-start;
+  background: var(--canvas-sunk); color: var(--bark-400);
+}
+.card-badge .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--bark-400); }
 @media (min-width: 860px) { .cards { flex-direction: row; } .cards .card { flex: 1; } }
+
+/* ---------- Podcast embed ---------- */
+.podcast-embed {
+  background: var(--canvas-raised); border: 1px solid rgba(44,42,41,0.1); border-radius: var(--radius-xl);
+  padding: var(--space-5); display: flex; flex-direction: column; gap: var(--space-3); margin-top: var(--space-6);
+}
+.podcast-embed-head { display: flex; flex-direction: column; gap: 4px; }
+.podcast-embed-eyebrow { font: 600 12px var(--font-body); letter-spacing: 0.03em; text-transform: uppercase; color: var(--bark-400); }
+.podcast-embed-title { font: 700 17px var(--font-display); color: var(--bark-900); }
+.podcast-embed-desc { font: 400 14px/1.55 var(--font-body); color: var(--bark-600); max-width: 560px; }
+.podcast-embed iframe { width: 100%; border: none; border-radius: var(--radius-md); }
+.podcast-embed-fallback { font: 500 13px var(--font-body); color: var(--aloe-deep); text-decoration: none; }
+.podcast-hub-list { display: flex; flex-direction: column; gap: var(--space-6); margin-top: var(--space-6); }
 
 .pillars { display: flex; flex-wrap: wrap; gap: 10px; margin-top: var(--space-4); }
 .pillar {

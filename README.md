@@ -18,9 +18,16 @@ Static, no build step, no framework. Plain HTML, one shared stylesheet, real des
 
 ## Structure
 
-- `index.html`, `platform.html`, `train.html`, `communities.html`, `grounders.html`, `funders.html`, `about.html`, `progress.html`, `contact.html`, `privacy.html`
+- `index.html`, `platform.html`, `train.html`, `communities.html`, `grounders.html`, `funders.html`, `about.html`, `progress.html`, `contact.html`, `privacy.html`, `glossary.html`, `listen.html`
 - `assets/styles.css` — every design token as a CSS custom property, plus responsive layout rules
 - `assets/img/` — the real favicon (from the actual brand mark), and the About page's photo
+
+## Podcast (added, needs real IDs before it's live)
+
+- Five `.podcast-embed` Spotify embeds, one on each of `index.html`, `funders.html`, `grounders.html`, `train.html`, `platform.html`, each matched to the page's audience (Foundation, Funders, Grounders, Training Tracks, The App).
+- A new `listen.html` hub page lists all five in sequence, for anyone arriving via a shared link or Spotify rather than organically. Linked from every page's nav as "Listen".
+- **Every embed currently points at a placeholder ID** (`SPOTIFY_EPISODE_ID_EP1` through `EP5`), marked with a `<!-- TODO (Deon): ... -->` comment right above each `<iframe>`. Find-and-replace each with the real Spotify episode ID from the show's dashboard before this is live. The "Follow on Spotify" button on `listen.html` also needs the real show URL — it's currently `href="#"`.
+- The Training Tracks page (`train.html`) now shows a third card, **Build & Shelter Skills**, styled muted/dashed (`.card.pending`) with an "In development" badge and no call-to-action — the Delft/Home of Compassion partnership isn't confirmed. Don't restyle it to match the other two tracks, and don't add a CTA to it, until that partnership is actually confirmed.
 
 ## Running it locally
 
