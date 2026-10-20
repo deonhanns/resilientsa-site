@@ -182,7 +182,20 @@ section.block.dark .split .col-body p { color: var(--bark-200); }
 .podcast-embed-desc { font: 400 14px/1.55 var(--font-body); color: var(--bark-600); max-width: 560px; }
 .podcast-embed iframe { width: 100%; border: none; border-radius: var(--radius-md); }
 .podcast-embed-fallback { font: 500 13px var(--font-body); color: var(--aloe-deep); text-decoration: none; }
+.podcast-embed-placeholder {
+  display: flex; align-items: center; justify-content: center; height: 72px;
+  border: 1.5px dashed rgba(44,42,41,0.28); border-radius: var(--radius-md);
+  font: 500 13px var(--font-body); color: var(--bark-400);
+}
 .podcast-hub-list { display: flex; flex-direction: column; gap: var(--space-6); margin-top: var(--space-6); }
+
+/* ---------- Infographic block ---------- */
+.infographic-block { margin-top: var(--space-6); }
+.infographic-block img {
+  width: 100%; height: auto; border-radius: var(--radius-xl); border: 1px solid rgba(44,42,41,0.1);
+  display: block;
+}
+.infographic-caption { font: 400 13px/1.5 var(--font-body); color: var(--bark-400); margin-top: 10px; max-width: 760px; }
 
 .pillars { display: flex; flex-wrap: wrap; gap: 10px; margin-top: var(--space-4); }
 .pillar {
