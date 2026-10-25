@@ -182,6 +182,9 @@ section.block.dark .split .col-body p { color: var(--bark-200); }
 .podcast-embed-desc { font: 400 14px/1.55 var(--font-body); color: var(--bark-600); max-width: 560px; }
 .podcast-embed iframe { width: 100%; border: none; border-radius: var(--radius-md); }
 .podcast-embed-fallback { font: 500 13px var(--font-body); color: var(--aloe-deep); text-decoration: none; }
+.podcast-embed-actions { display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center; }
+.podcast-embed-download { font: 500 13px var(--font-body); color: var(--aloe-deep); text-decoration: none; display: inline-flex; align-items: center; min-height: 44px; }
+.podcast-embed-download:hover, .podcast-embed-fallback:hover { text-decoration: underline; }
 .podcast-embed-placeholder {
   display: flex; align-items: center; justify-content: center; height: 72px;
   border: 1.5px dashed rgba(44,42,41,0.28); border-radius: var(--radius-md);
