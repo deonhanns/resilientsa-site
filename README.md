@@ -4,7 +4,7 @@ Static, no build step, no framework. Plain HTML, one shared stylesheet, real des
 
 ## Status
 
-**Not deployed.** Built and ready, but held back until the NPC is actually registered, so the site opens saying something true, not "coming soon." See `about.html` / `progress.html` for the reasoning.
+**NPC registered 19 Nov 2026** (CIPC 2026/875818/08); pages updated to say so. The site was held back until registration so it would open saying something true. Confirm the live host before treating this line as current. See `about.html` / `progress.html` for the reasoning.
 
 **Hosting undecided.** Vercel's Hobby plan is non-commercial use only. Confirm this site (and any linked payment or licensing activity) qualifies before deploying there — otherwise Vercel Pro or another host. Not resolved in this repo.
 
